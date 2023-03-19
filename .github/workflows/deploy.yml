@@ -5,20 +5,10 @@ on:
     branches:
       - main
 
-permissions:  
-  Actions: write
-  Checks: write
-  Contents: write
-  Deployments: write
-  Discussions: write
-  Issues: write
-  Metadata: read
-  Packages: write
-  Pages: write
-  PullRequests: write
-  RepositoryProjects: write
-  SecurityEvents: write
-  Statuses: write
+permissions:
+  actions: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
