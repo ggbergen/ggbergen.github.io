@@ -7,8 +7,18 @@ on:
 
 permissions:
   actions: write
-  pages: write
+  checks: write
+  contents: write
+  deployments: write
   id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 
 jobs:
   build:
