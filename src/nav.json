@@ -16,6 +16,10 @@
         "href": "/events"
     },
     {
+        "text": "Turneringer",
+        "href": "/tournament"
+    },
+    {
         "text": "Kontakt oss",
         "href": "/contact"
     }
