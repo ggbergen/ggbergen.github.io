@@ -4,12 +4,11 @@ import axios from 'axios';
 interface Tournament {
   let: any
   tournament: {
-    id: number;
+    id: any
     name: string;
     full_challonge_url: string;
-    // Add more properties as needed
+    live_image_url: string
   };
-  // Add more properties as needed
 }
 
 const EndedTournaments = () => {
@@ -39,10 +38,8 @@ const EndedTournaments = () => {
       <ul>
         {reversedTournaments.map((tournament) => (
           <li key={tournament.tournament.id}>
-            {/* Display tournament details based on your data structure */}
-            <p>{`${tournament.tournament.name}`}</p>
-            <p><a target="_blank" href={tournament.tournament.full_challonge_url} rel="noopener noreferrer">{`${tournament.tournament.full_challonge_url}`}</a></p>
-            {/* Add more details as needed */}
+            <p><a target="_blank" href={tournament.tournament.full_challonge_url} rel="noopener noreferrer">{tournament.tournament.name}</a></p>
+            <img src={tournament.tournament.live_image_url} alt='Bracket overview'/>
           </li>
         ))}
       </ul>
