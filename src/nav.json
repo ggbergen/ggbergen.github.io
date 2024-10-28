@@ -1,22 +1,22 @@
 [
-    {
-        "text": "Hjem",
-        "href": "/"
-    },
-    {
-        "text": "Lokasjon",
-        "href": "/location"
-    },
-    {
-        "text": "Galleri",
-        "href": "/gallery"
-    },
-    {
-        "text": "Eventer",
-        "href": "/events"
-    },
-    {
-        "text": "Kontakt oss",
-        "href": "/contact"
-    }
+  {
+    "text": "Forsiden",
+    "href": "/"
+  },
+  {
+    "text": "Lokasjon",
+    "href": "/location"
+  },
+  {
+    "text": "Galleri",
+    "href": "/gallery"
+  },
+  {
+    "text": "Eventer",
+    "href": "/events"
+  },
+  {
+    "text": "Kontakt oss",
+    "href": "/contact"
+  }
 ]
