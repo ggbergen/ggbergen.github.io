@@ -10,13 +10,13 @@ export default function Home() {
             autoPlay
             muted
             loop
-            className="opac absolute max-h-fit min-h-full min-w-full object-cover blur-lg"
+            className="absolute max-h-fit min-h-full min-w-full object-cover blur-lg"
           ></video>
           <div className="z-10 flex flex-col justify-center gap-4 text-center">
             <div className="flex justify-center">
               <img
                 src="logo.png"
-                className="h-auto max-h-64 max-w-full flex-grow-0"
+                className="h-auto max-h-64 max-w-full flex-grow-0 p-4"
               ></img>
             </div>
             <h1 className="text-5xl font-bold">
@@ -85,7 +85,7 @@ export default function Home() {
       </p>
       <p>
         Does your lorem ipsum text long for something a little meatier? Give our
-        generator a try… it’s tasty!
+        generator a try… it's tasty!
       </p>
       <Link href="/events">Klikk Her</Link>
     </>

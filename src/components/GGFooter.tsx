@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaTwitch, FaDiscord, FaFacebook, FaYoutube } from 'react-icons/fa6';
 
-export function GGFooter() {
+export default function GGFooter() {
   const [mail, setMail] = useState(
     <span
       className="h-4 cursor-pointer font-semibold text-white underline"

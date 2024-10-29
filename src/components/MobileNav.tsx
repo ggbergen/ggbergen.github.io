@@ -65,7 +65,7 @@ export function MobileNav() {
         </SheetContent>
       </Sheet>
       <span className="absolute left-0 mx-auto w-full text-center font-bold sm:inline-block md:hidden">
-        {navPaths.find((navPath) => navPath.href == router.asPath)!.text}
+        {navPaths.find((navPath) => navPath.href == router.asPath)?.text}
       </span>
     </>
   );

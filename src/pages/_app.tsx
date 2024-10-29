@@ -1,4 +1,4 @@
-import { GGFooter } from '@/components/GGFooter';
+import GGFooter from '@/components/GGFooter';
 import GGHeader from '@/components/GGHeader';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
