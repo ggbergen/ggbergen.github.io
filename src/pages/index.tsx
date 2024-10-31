@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      <div className="h-dvh overflow-clip">
-        <div className="absolute left-0 top-0 flex h-dvh w-dvw items-center justify-center overflow-clip">
+      <div className="h-dvh">
+        <div className="absolute left-0 top-0 flex h-dvh w-dvw items-center justify-center overflow-clip bg-black">
           <video
             src="/hero.mp4"
             autoPlay

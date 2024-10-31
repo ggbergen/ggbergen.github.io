@@ -2,7 +2,7 @@ import { AnchorHTMLAttributes, forwardRef, useState } from 'react';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaBars } from 'react-icons/fa6';
 
 import navPaths from '@/nav.json';
 import { useRouter } from 'next/router';
@@ -22,8 +22,8 @@ const NavLink = forwardRef<
       ref={ref}
       href={href}
       className={cn(
-        'font-semibold transition-colors hover:text-foreground/80',
-        router.asPath == href ? 'text-foreground' : 'text-foreground/60',
+        'my-1 pl-4 text-xl font-semibold transition-colors hover:text-white/90',
+        router.asPath == href ? 'text-white' : 'text-white/80',
       )}
       {...props}
     >
@@ -43,15 +43,18 @@ export function MobileNav() {
           <Button
             variant="ghost"
             size={'lg'}
-            className="z-10 mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+            className="z-10 mr-2 px-0 text-base text-white hover:bg-transparent hover:text-white focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
           >
-            <GiHamburgerMenu className="!h-8 !w-8" />
+            <FaBars className="!h-8 !w-8" />
             <span className="sr-only">Toggle Menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="flex flex-col pr-0">
+        <SheetContent
+          side="left"
+          className="flex flex-col border-red-600 bg-red-600 pr-0"
+        >
           <span>
-            <img src="/logo.png" className="h-24"></img>
+            <img src="/logo.png" className="mb-4 h-24"></img>
           </span>
           {navPaths.map((navPath) => {
             return (

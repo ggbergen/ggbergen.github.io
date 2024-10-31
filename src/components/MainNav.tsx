@@ -30,7 +30,7 @@ export function MainNav() {
             <img src="/logo.png" className="h-12"></img>
           </span>
         </Link>
-        <nav className="flex items-center gap-4 text-sm font-semibold lg:gap-6">
+        <nav className="text-md flex items-center gap-4 font-semibold lg:gap-6">
           {navPaths.map((navPath) => {
             return <NavLink key={navPath.href} {...navPath}></NavLink>;
           })}
