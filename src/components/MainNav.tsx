@@ -27,7 +27,7 @@ export function MainNav() {
       <div className="mr-4 hidden md:flex">
         <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
           <span className="relative hidden font-bold md:inline-block">
-            <img src="/logo.png" className="h-12"></img>
+            <img src="/logo-text.png" className="h-8"></img>
           </span>
         </Link>
         <nav className="text-md flex items-center gap-4 font-semibold lg:gap-6">
