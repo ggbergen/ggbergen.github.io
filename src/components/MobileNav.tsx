@@ -54,7 +54,7 @@ export function MobileNav() {
           className="flex flex-col border-red-600 bg-red-600 pr-0"
         >
           <span>
-            <img src="/logo.png" className="mb-4 h-24"></img>
+            <img src="/logo-text.png" className="h-20 p-4"></img>
           </span>
           {navPaths.map((navPath) => {
             return (
