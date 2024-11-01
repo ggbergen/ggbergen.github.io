@@ -59,6 +59,15 @@ module.exports = {
           5: 'hsl(var(--chart-5))',
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#fff',
+            '--tw-prose-headings': '#fff',
+            maxWidth: 'initial',
+          },
+        },
+      },
     },
   },
 };
