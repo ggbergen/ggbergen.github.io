@@ -1,6 +1,6 @@
 export default function GGHero() {
   return (
-    <div className="h-dvh">
+    <div className="-mt-8 h-dvh">
       <div className="absolute left-0 top-0 flex h-dvh w-dvw items-center justify-center overflow-clip bg-black">
         <video
           src="/hero.mp4"
