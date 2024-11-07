@@ -4,19 +4,19 @@
     "href": "/"
   },
   {
-    "text": "Lokasjon",
-    "href": "/lokasjon"
+    "text": "Arrangementer",
+    "href": "/arrangementer"
   },
   {
-    "text": "Bli medlem",
+    "text": "Spill",
+    "href": "/spill"
+  },
+  {
+    "text": "Støtt oss",
     "href": "/bli-medlem"
   },
   {
-    "text": "Eventer",
-    "href": "/eventer"
-  },
-  {
-    "text": "Kontakt oss",
+    "text": "Kontakt",
     "href": "/kontakt-oss"
   }
 ]
