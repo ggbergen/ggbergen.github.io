@@ -1,4 +1,10 @@
-import { FaTwitch, FaDiscord, FaFacebook, FaYoutube } from 'react-icons/fa6';
+import {
+  FaTwitch,
+  FaDiscord,
+  FaFacebook,
+  FaYoutube,
+  FaInstagram,
+} from 'react-icons/fa6';
 import HiddenElement from './HiddenLink';
 import { cn } from '@/lib/utils';
 
@@ -44,6 +50,14 @@ export default function MainFooter({ className = '' }) {
             >
               <FaDiscord className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
               <FaDiscord className="pointer-events-none absolute top-0" />
+            </a>
+            <a
+              href={socials.instagram}
+              className="relative transition hover:text-violet-500"
+              target="_blank"
+            >
+              <FaInstagram className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
+              <FaInstagram className="pointer-events-none absolute top-0" />
             </a>
             <a
               href={socials.facebook}
