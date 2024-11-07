@@ -13,7 +13,8 @@ export default function App({ Component, pageProps }: AppProps) {
   const prettyName = (Component as ExtendedComponent).prettyName;
   const title = `GG Bergen - ${
     prettyName ||
-    navPaths.find((navPath) => navPath.href == router.asPath)!.text
+    navPaths.find((navPath) => navPath.href == router.asPath)?.text ||
+    ''
   }`;
   return (
     <>
