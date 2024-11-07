@@ -2,7 +2,14 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import navPaths from '@/nav.json';
-import { FaDiscord, FaFacebook, FaTwitch, FaYoutube } from 'react-icons/fa6';
+import socials from '@/socials.json';
+import {
+  FaDiscord,
+  FaFacebook,
+  FaInstagram,
+  FaTwitch,
+  FaYoutube,
+} from 'react-icons/fa6';
 
 type NavLinkProps = (typeof navPaths)[0];
 
@@ -50,7 +57,7 @@ export function MainNav() {
         <div className="flex-grow"></div>
         <div className="flex justify-evenly gap-4 text-3xl">
           <a
-            href="http://discord.ggbergen.org"
+            href={socials.discord}
             className="relative transition hover:text-indigo-500"
             target="_blank"
           >
@@ -58,7 +65,15 @@ export function MainNav() {
             <FaDiscord className="pointer-events-none absolute top-0" />
           </a>
           <a
-            href="https://www.facebook.com/ggbergen"
+            href={socials.instagram}
+            className="relative transition hover:text-violet-500"
+            target="_blank"
+          >
+            <FaInstagram className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
+            <FaInstagram className="pointer-events-none absolute top-0" />
+          </a>
+          <a
+            href={socials.facebook}
             className="relative transition hover:text-blue-600"
             target="_blank"
           >
@@ -66,7 +81,7 @@ export function MainNav() {
             <FaFacebook className="pointer-events-none absolute top-0" />
           </a>
           <a
-            href="https://www.twitch.tv/ggbergentv"
+            href={socials.twitch}
             className="relative transition hover:text-purple-600"
             target="_blank"
           >
@@ -74,7 +89,7 @@ export function MainNav() {
             <FaTwitch className="pointer-events-none absolute top-0" />
           </a>
           <a
-            href="http://discord.ggbergen.org"
+            href={socials.youtube}
             className="group relative transition hover:text-red-600"
             target="_blank"
           >

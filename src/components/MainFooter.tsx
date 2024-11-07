@@ -2,6 +2,8 @@ import { FaTwitch, FaDiscord, FaFacebook, FaYoutube } from 'react-icons/fa6';
 import HiddenElement from './HiddenLink';
 import { cn } from '@/lib/utils';
 
+import socials from '@/socials.json';
+
 export default function MainFooter({ className = '' }) {
   return (
     <footer className={cn('mt-8 bg-red-600 p-8 text-white', className)}>
@@ -36,7 +38,7 @@ export default function MainFooter({ className = '' }) {
           <h1 className="text-2xl font-bold">Sosialt</h1>
           <div className="flex justify-end gap-2 pt-2 text-right text-4xl">
             <a
-              href="http://discord.ggbergen.org"
+              href={socials.discord}
               className="relative transition hover:text-indigo-500"
               target="_blank"
             >
@@ -44,7 +46,7 @@ export default function MainFooter({ className = '' }) {
               <FaDiscord className="pointer-events-none absolute top-0" />
             </a>
             <a
-              href="https://www.facebook.com/ggbergen"
+              href={socials.facebook}
               className="relative transition hover:text-blue-600"
               target="_blank"
             >
@@ -52,7 +54,7 @@ export default function MainFooter({ className = '' }) {
               <FaFacebook className="pointer-events-none absolute top-0" />
             </a>
             <a
-              href="https://www.twitch.tv/ggbergentv"
+              href={socials.twitch}
               className="relative transition hover:text-purple-600"
               target="_blank"
             >
@@ -60,7 +62,7 @@ export default function MainFooter({ className = '' }) {
               <FaTwitch className="pointer-events-none absolute top-0" />
             </a>
             <a
-              href="http://discord.ggbergen.org"
+              href={socials.youtube}
               className="group relative transition hover:text-red-600"
               target="_blank"
             >

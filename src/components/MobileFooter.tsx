@@ -1,6 +1,14 @@
-import { FaTwitch, FaDiscord, FaFacebook, FaYoutube } from 'react-icons/fa6';
+import {
+  FaTwitch,
+  FaDiscord,
+  FaFacebook,
+  FaYoutube,
+  FaInstagram,
+} from 'react-icons/fa6';
 import HiddenElement from './HiddenLink';
 import { cn } from '@/lib/utils';
+
+import socials from '@/socials.json';
 
 export default function MobileFooter({ className = '' }) {
   return (
@@ -8,7 +16,7 @@ export default function MobileFooter({ className = '' }) {
       <div className="container flex flex-col items-center justify-evenly gap-2 p-0">
         <div className="flex w-full justify-evenly gap-2 text-5xl">
           <a
-            href="http://discord.ggbergen.org"
+            href={socials.discord}
             className="relative transition hover:text-indigo-500"
             target="_blank"
           >
@@ -16,7 +24,15 @@ export default function MobileFooter({ className = '' }) {
             <FaDiscord className="pointer-events-none absolute top-0" />
           </a>
           <a
-            href="https://www.facebook.com/ggbergen"
+            href={socials.instagram}
+            className="relative transition hover:text-violet-500"
+            target="_blank"
+          >
+            <FaInstagram className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
+            <FaInstagram className="pointer-events-none absolute top-0" />
+          </a>
+          <a
+            href={socials.facebook}
             className="relative transition hover:text-blue-600"
             target="_blank"
           >
@@ -24,7 +40,7 @@ export default function MobileFooter({ className = '' }) {
             <FaFacebook className="pointer-events-none absolute top-0" />
           </a>
           <a
-            href="https://www.twitch.tv/ggbergentv"
+            href={socials.twitch}
             className="relative transition hover:text-purple-600"
             target="_blank"
           >
@@ -32,7 +48,7 @@ export default function MobileFooter({ className = '' }) {
             <FaTwitch className="pointer-events-none absolute top-0" />
           </a>
           <a
-            href="http://discord.ggbergen.org"
+            href={socials.youtube}
             className="group relative transition hover:text-red-600"
             target="_blank"
           >
