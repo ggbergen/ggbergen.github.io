@@ -6,6 +6,17 @@ import { FaDiscord, FaFacebook, FaTwitch, FaYoutube } from 'react-icons/fa6';
 
 type NavLinkProps = (typeof navPaths)[0];
 
+function highlightPath(path: string, href: string) {
+  if (path == href) {
+    return true;
+  }
+  if (href.length > 2 && path.startsWith(href)) {
+    return true;
+  }
+
+  return false;
+}
+
 function NavLink({ href, text }: NavLinkProps) {
   const router = useRouter();
 
@@ -14,7 +25,7 @@ function NavLink({ href, text }: NavLinkProps) {
       href={href}
       className={cn(
         'transition-colors hover:text-white/90',
-        router.asPath == href ? 'text-white' : 'text-white/80',
+        highlightPath(router.asPath, href) ? 'text-white' : 'text-white/80',
       )}
     >
       {text}
@@ -33,7 +44,7 @@ export function MainNav() {
         </Link>
         <div className="text-md flex items-center gap-4 font-semibold lg:gap-6">
           {navPaths.map((navPath) => {
-            return <NavLink key={navPath.href} {...navPath}></NavLink>;
+            return <NavLink key={navPath.text} {...navPath}></NavLink>;
           })}
         </div>
         <div className="flex-grow"></div>

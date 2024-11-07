@@ -65,7 +65,7 @@ export function MobileNav() {
           {navPaths.map((navPath) => {
             return (
               <NavLink
-                key={navPath.href}
+                key={navPath.text}
                 onClick={() => setOpen(false)}
                 {...navPath}
               ></NavLink>
