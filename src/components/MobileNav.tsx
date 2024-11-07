@@ -17,6 +17,17 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
+function highlightPath(path: string, href: string) {
+  if (path == href) {
+    return true;
+  }
+  if (href.length > 2 && path.startsWith(href)) {
+    return true;
+  }
+
+  return false;
+}
+
 type NavLinkProps = (typeof navPaths)[0];
 
 const NavLink = forwardRef<
@@ -31,7 +42,7 @@ const NavLink = forwardRef<
       href={href}
       className={cn(
         'my-1 pl-4 text-xl font-semibold transition-colors hover:text-white/90',
-        router.asPath == href ? 'text-white' : 'text-white/80',
+        highlightPath(router.asPath, href) ? 'text-white' : 'text-white/80',
       )}
       {...props}
     >
@@ -40,7 +51,7 @@ const NavLink = forwardRef<
   );
 });
 
-export function MobileNav() {
+export function MobileNav({ title }: { title: string }) {
   const [open, setOpen] = useState(false);
   const router = useRouter();
 
@@ -120,7 +131,8 @@ export function MobileNav() {
         </SheetContent>
       </Sheet>
       <span className="absolute left-0 mx-auto w-full text-center font-bold sm:inline-block md:hidden">
-        {navPaths.find((navPath) => navPath.href == router.asPath)?.text}
+        {title ||
+          navPaths.find((navPath) => navPath.href == router.asPath)?.text}
       </span>
     </>
   );
