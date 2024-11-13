@@ -30,13 +30,13 @@ export const getStaticProps = async () => {
 
   const modules = await Promise.all(
     files.map(async (file) => ({
-      module: await import(`@/pages/spill/${file}`),
+      component: (await import(`@/pages/spill/${file}`)).default as GamePage,
       path: file,
     })),
   );
 
-  const spill = modules.map(({ module, path }, index) => {
-    return { path, name: module.default.prettyName || null };
+  const spill = modules.map(({ component, path }, index) => {
+    return { path, name: component.displayName };
   });
 
   return {

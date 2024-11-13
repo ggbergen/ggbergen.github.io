@@ -1,9 +1,11 @@
-export default function Melee() {
+const Melee: GamePage = () => {
   return (
     <>
       <p>Melee</p>
     </>
   );
-}
+};
 
-Melee.prettyName = 'Super Smash Bros. Melee';
+Melee.displayName = 'Super Smash Bros. Melee';
+
+export default Melee;

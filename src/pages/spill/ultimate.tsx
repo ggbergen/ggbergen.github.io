@@ -1,3 +1,11 @@
-export default function SmashUltimate() {}
+const SmashUltimate: GamePage = () => {
+  return (
+    <>
+      <p>Smash Ultimate</p>
+    </>
+  );
+};
 
-SmashUltimate.prettyName = 'Super Smash Bros. Ultimate';
+SmashUltimate.displayName = 'Super Smash Bros. Ultimate';
+
+export default SmashUltimate;
