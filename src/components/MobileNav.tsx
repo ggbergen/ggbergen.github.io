@@ -123,8 +123,8 @@ export function MobileNav({ title }: { title: string }) {
               className="group relative transition hover:text-red-600"
               target="_blank"
             >
-              <FaYoutube className="absolute z-0 text-3xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-              <div className="absolute left-1/3 top-1/3 h-2 w-2 bg-white opacity-0 group-hover:opacity-100" />
+              <FaYoutube className="absolute z-0 text-5xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
+              <div className="absolute left-1/3 top-1/3 h-4 w-4 bg-white opacity-0 group-hover:opacity-100" />
               <FaYoutube className="pointer-events-none relative top-0 z-10" />
             </a>
           </div>
