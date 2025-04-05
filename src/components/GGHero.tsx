@@ -7,16 +7,16 @@ export default function GGHero() {
           autoPlay
           muted
           loop
-          className="absolute max-h-fit min-h-full min-w-full object-cover blur-lg"
+          className="absolute max-h-fit min-h-full min-w-full object-cover"
         ></video>
-        <div className="z-10 flex flex-col justify-center gap-4 text-center">
+        <div className="z-10 flex flex-col justify-center gap-4 text-center w-full">
           <div className="flex justify-center">
             <img
               src="logo.png"
               className="h-auto max-h-64 max-w-full flex-grow-0 p-4"
             ></img>
           </div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-5xl font-bold bg-red-500/40 w-full py-6">
             Åpent spillhus for
             <br />
             ungdom og unge voksne
