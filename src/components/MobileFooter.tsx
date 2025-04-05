@@ -44,7 +44,7 @@ export default function MobileFooter({ className = '' }) {
             className="relative transition hover:text-purple-600"
             target="_blank"
           >
-            <FaTwitch className="top-0 text-yellow-200 opacity-0 blur-sm hover:opacity-100" />
+            <FaTwitch className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
             <FaTwitch className="pointer-events-none absolute top-0" />
           </a>
           <a
@@ -52,8 +52,8 @@ export default function MobileFooter({ className = '' }) {
             className="group relative transition hover:text-red-600"
             target="_blank"
           >
-            <FaYoutube className="absolute z-0 text-5xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-            <div className="absolute left-1/3 top-1/3 h-4 w-4 bg-white opacity-0 group-hover:opacity-100" />
+            <FaYoutube className="absolute z-0 text-4xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
+            <div className="absolute left-1/3 top-1/3 h-3 w-3 bg-white opacity-0 group-hover:opacity-100" />
             <FaYoutube className="pointer-events-none relative top-0 z-10" />
           </a>
         </div>
@@ -75,7 +75,7 @@ export default function MobileFooter({ className = '' }) {
             <HiddenElement text="Vis epost">
               <a
                 href="mailto:styret@ggbergen.org"
-                className="h-4 cursor-pointer text-white underline hover:underline md:no-underline"
+                className="h-4 cursor-pointer underline hover:underline md:no-underline"
               >
                 <span className="font-semibold">styret@ggbergen.org</span>
               </a>

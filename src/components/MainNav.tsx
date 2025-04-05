@@ -31,8 +31,8 @@ function NavLink({ href, text }: NavLinkProps) {
     <Link
       href={href}
       className={cn(
-        'transition-colors hover:text-white/90',
-        highlightPath(router.asPath, href) ? 'text-white' : 'text-white/80',
+        'transition-colors hover:text-foreground/90',
+        highlightPath(router.asPath, href) ? 'text-foreground' : 'text-foreground/80',
       )}
     >
       {text}
@@ -85,7 +85,7 @@ export function MainNav() {
             className="relative transition hover:text-purple-600"
             target="_blank"
           >
-            <FaTwitch className="top-0 text-yellow-200 opacity-0 blur-sm hover:opacity-100" />
+            <FaTwitch className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
             <FaTwitch className="pointer-events-none absolute top-0" />
           </a>
           <a
@@ -94,7 +94,7 @@ export function MainNav() {
             target="_blank"
           >
             <FaYoutube className="absolute z-0 text-3xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-            <div className="absolute left-1/3 top-1/3 h-2 w-2 bg-white opacity-0 group-hover:opacity-100" />
+            <div className="absolute left-1/3 top-1/3 h-1/3 w-1/3 bg-white opacity-0 group-hover:opacity-100" />
             <FaYoutube className="pointer-events-none relative top-0 z-10" />
           </a>
         </div>

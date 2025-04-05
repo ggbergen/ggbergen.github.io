@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { ReactNode, useState, type JSX } from 'react';
+import { useState, type JSX } from 'react';
 
 type HiddenElementProps = {
   text: string;
@@ -15,7 +15,7 @@ export default function HiddenElement({
   const [mail, setMail] = useState(
     <span
       className={cn(
-        'h-4 cursor-pointer font-semibold text-white underline',
+        'h-4 cursor-pointer font-semibold underline',
         className,
       )}
       onClick={() => {

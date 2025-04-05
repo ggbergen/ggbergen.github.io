@@ -21,9 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="flex min-h-screen flex-col bg-background bg-blue-950">
+      <div className="flex min-h-screen flex-col bg-background">
         <GGHeader title={subTitle} />
-        <main className="container flex-1 text-white">
+        <main className="container flex-1">
           <Component {...pageProps} />
         </main>
         <GGFooter />

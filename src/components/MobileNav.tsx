@@ -41,8 +41,8 @@ const NavLink = forwardRef<
       ref={ref}
       href={href}
       className={cn(
-        'my-1 pl-4 text-xl font-semibold transition-colors hover:text-white/90',
-        highlightPath(router.asPath, href) ? 'text-white' : 'text-white/80',
+        'my-1 pl-4 text-xl font-semibold transition-colors hover:text-foreground/90',
+        highlightPath(router.asPath, href) ? 'text-foreground' : 'text-foreground/80',
       )}
       {...props}
     >
@@ -62,7 +62,7 @@ export function MobileNav({ title }: { title: string }) {
           <Button
             variant="ghost"
             size={'lg'}
-            className="z-10 mr-2 px-0 text-base text-white hover:bg-transparent hover:text-white focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+            className="z-10 mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
           >
             <FaBars className="!h-8 !w-8" />
             <span className="sr-only">Toggle Menu</span>
@@ -115,7 +115,7 @@ export function MobileNav({ title }: { title: string }) {
               className="relative transition hover:text-purple-600"
               target="_blank"
             >
-              <FaTwitch className="top-0 text-yellow-200 opacity-0 blur-sm hover:opacity-100" />
+              <FaTwitch className="top-0 text-white opacity-0 blur-sm hover:opacity-100" />
               <FaTwitch className="pointer-events-none absolute top-0" />
             </a>
             <a
@@ -123,8 +123,8 @@ export function MobileNav({ title }: { title: string }) {
               className="group relative transition hover:text-red-600"
               target="_blank"
             >
-              <FaYoutube className="absolute z-0 text-5xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-              <div className="absolute left-1/3 top-1/3 h-4 w-4 bg-white opacity-0 group-hover:opacity-100" />
+              <FaYoutube className="absolute z-0 text-4xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
+              <div className="absolute left-1/3 top-1/3 h-3 w-3 bg-white opacity-0 group-hover:opacity-100" />
               <FaYoutube className="pointer-events-none relative top-0 z-10" />
             </a>
           </div>
