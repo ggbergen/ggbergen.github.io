@@ -17,6 +17,7 @@ export default function MainFooter({ className = '' }) {
         <div className="h-24 w-72">
           <h1 className="text-2xl font-bold">Kontakt oss</h1>
           <p>
+            {/*
             <HiddenElement text="Vis telefon">
               <a
                 href="tel:+4712345678"
@@ -25,6 +26,7 @@ export default function MainFooter({ className = '' }) {
                 Tlf: <span className="font-semibold">123 45 678</span>
               </a>
             </HiddenElement>
+            */}
           </p>
           <p>
             <HiddenElement text="Vis epost">
@@ -42,7 +44,7 @@ export default function MainFooter({ className = '' }) {
         <img className="h-24" src="/logo.png"></img>
         <div className="h-24 w-72 text-right">
           <h1 className="text-2xl font-bold">Sosialt</h1>
-          <div className="flex justify-end gap-2 pt-2 text-right text-4xl">
+          <div className="flex justify-end gap-4 pt-2 text-right text-4xl">
             <a
               href={socials.discord}
               className="relative transition hover:text-indigo-500"

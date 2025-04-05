@@ -14,7 +14,7 @@ export default function MobileFooter({ className = '' }) {
   return (
     <footer className={cn('mt-8 bg-red-600 p-8 text-white', className)}>
       <div className="container flex flex-col items-center justify-evenly gap-2 p-0">
-        <div className="flex w-full justify-evenly gap-2 text-5xl">
+        <div className="flex w-full justify-evenly gap-2 text-4xl">
           <a
             href={socials.discord}
             className="relative transition hover:text-indigo-500"
@@ -59,6 +59,7 @@ export default function MobileFooter({ className = '' }) {
         </div>
         <h1 className="text-center text-2xl font-bold">Kontakt oss</h1>
         <div className="flex w-full justify-between">
+            {/*
           <p className="mr-4 flex-1 text-right">
             <HiddenElement text="Vis telefon">
               <a
@@ -69,7 +70,8 @@ export default function MobileFooter({ className = '' }) {
               </a>
             </HiddenElement>
           </p>
-          <p className="ml-4 flex-1 text-left">
+            */}
+          <p className="flex-1 text-center" /*className="ml-4 flex-1 text-left"*/>
             <HiddenElement text="Vis epost">
               <a
                 href="mailto:styret@ggbergen.org"

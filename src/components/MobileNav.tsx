@@ -85,7 +85,7 @@ export function MobileNav({ title }: { title: string }) {
             );
           })}
           <div className="flex-grow"></div>
-          <div className="-ml-6 flex items-center justify-evenly gap-2 text-5xl text-white">
+          <div className="-ml-6 flex items-center justify-evenly gap-2 text-4xl text-white">
             <a
               href={socials.discord}
               className="relative transition hover:text-indigo-500"

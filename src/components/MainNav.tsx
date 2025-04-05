@@ -55,7 +55,7 @@ export function MainNav() {
           })}
         </div>
         <div className="flex-grow"></div>
-        <div className="flex justify-evenly gap-4 text-3xl">
+        <div className="flex justify-evenly gap-5 text-3xl">
           <a
             href={socials.discord}
             className="relative transition hover:text-indigo-500"
