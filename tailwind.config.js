@@ -10,6 +10,7 @@ module.exports = {
       screens: {
         '2xl': '1400px',
       },
+      vippscard: '20rem',
     },
     extend: {
       borderRadius: {
@@ -62,8 +63,10 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: '#fff',
-            '--tw-prose-headings': '#fff',
+            '--tw-prose-bold': 'hsl(var(--foreground))',
+            '--tw-prose-headings': 'hsl(var(--foreground))',
+            '--tw-prose-links': 'hsl(var(--foreground))',
+            color: 'hsl(var(--foreground))',
             maxWidth: 'initial',
           },
         },
