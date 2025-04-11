@@ -1,9 +1,15 @@
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
-import { kontingent, vippsnummer } from '#/data.json';
+import data from '#/data.json';
 
-export default function VippsMedlemCard({ className }: any) {
+const { kontingent, vippsnummer } = data;
+
+type VippsMedlemCardProps = {
+  className: string;
+};
+
+export default function VippsMedlemCard({ className }: VippsMedlemCardProps) {
   const [vippsRef, setVippsRef] = useState(
     'https://qr.vipps.no/28/2/05/031/OLm5VUdYM',
   );

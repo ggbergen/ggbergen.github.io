@@ -66,6 +66,8 @@ module.exports = {
             '--tw-prose-bold': 'hsl(var(--foreground))',
             '--tw-prose-headings': 'hsl(var(--foreground))',
             '--tw-prose-links': 'hsl(var(--foreground))',
+            '--tw-prose-counters': 'rgba(244, 150, 150, 1)',
+            '--tw-prose-bullets': 'rgba(244, 150, 150, 1)',
             color: 'hsl(var(--foreground))',
             maxWidth: 'initial',
           },
