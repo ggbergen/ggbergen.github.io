@@ -14,10 +14,7 @@ export default function HiddenElement({
 }: HiddenElementProps) {
   const [mail, setMail] = useState(
     <span
-      className={cn(
-        'h-4 cursor-pointer font-semibold underline',
-        className,
-      )}
+      className={cn('h-4 cursor-pointer font-semibold underline', className)}
       onClick={() => {
         setMail(children);
       }}

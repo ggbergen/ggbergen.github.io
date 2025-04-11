@@ -53,13 +53,13 @@ export default function MobileFooter({ className = '' }) {
             target="_blank"
           >
             <FaYoutube className="absolute z-0 text-4xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-            <div className="absolute left-1/3 top-1/3 h-3 w-3 bg-white opacity-0 group-hover:opacity-100" />
+            <div className="absolute top-1/3 left-1/3 h-3 w-3 bg-white opacity-0 group-hover:opacity-100" />
             <FaYoutube className="pointer-events-none relative top-0 z-10" />
           </a>
         </div>
         <h1 className="text-center text-2xl font-bold">Kontakt oss</h1>
         <div className="flex w-full justify-between">
-            {/*
+          {/*
           <p className="mr-4 flex-1 text-right">
             <HiddenElement text="Vis telefon">
               <a
@@ -71,7 +71,9 @@ export default function MobileFooter({ className = '' }) {
             </HiddenElement>
           </p>
             */}
-          <p className="flex-1 text-center" /*className="ml-4 flex-1 text-left"*/>
+          <p
+            className="flex-1 text-center" /*className="ml-4 flex-1 text-left"*/
+          >
             <HiddenElement text="Vis epost">
               <a
                 href="mailto:styret@ggbergen.org"

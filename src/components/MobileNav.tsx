@@ -41,8 +41,10 @@ const NavLink = forwardRef<
       ref={ref}
       href={href}
       className={cn(
-        'my-1 pl-4 text-xl font-semibold transition-colors hover:text-foreground/90',
-        highlightPath(router.asPath, href) ? 'text-foreground' : 'text-foreground/80',
+        'hover:text-foreground/90 my-1 pl-4 text-xl font-semibold transition-colors',
+        highlightPath(router.asPath, href)
+          ? 'text-foreground'
+          : 'text-foreground/80',
       )}
       {...props}
     >
@@ -124,7 +126,7 @@ export function MobileNav({ title }: { title: string }) {
               target="_blank"
             >
               <FaYoutube className="absolute z-0 text-4xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-              <div className="absolute left-1/3 top-1/3 h-3 w-3 bg-white opacity-0 group-hover:opacity-100" />
+              <div className="absolute top-1/3 left-1/3 h-3 w-3 bg-white opacity-0 group-hover:opacity-100" />
               <FaYoutube className="pointer-events-none relative top-0 z-10" />
             </a>
           </div>

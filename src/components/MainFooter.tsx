@@ -82,8 +82,8 @@ export default function MainFooter({ className = '' }) {
               className="group relative transition hover:text-red-600"
               target="_blank"
             >
-              <FaYoutube className="absolute -left-1.5 -top-1.5 z-0 text-5xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
-              <div className="absolute left-1/3 top-1/3 h-1/3 w-1/3 bg-white opacity-0 group-hover:opacity-100" />
+              <FaYoutube className="absolute -top-1.5 -left-1.5 z-0 text-5xl text-white opacity-0 blur-sm group-hover:opacity-100"></FaYoutube>
+              <div className="absolute top-1/3 left-1/3 h-1/3 w-1/3 bg-white opacity-0 group-hover:opacity-100" />
               <FaYoutube className="pointer-events-none relative top-0 z-10" />
             </a>
           </div>

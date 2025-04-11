@@ -1,9 +1,13 @@
-export default function Home() {
+// import BliMedlemContent from '#/bli-medlem.mdx';
+
+export default function BliMedlem() {
   return (
     <>
-      <main>
-        <p>[bilder her]</p>
-      </main>
+      <article className="prose">
+        {
+          //<BliMedlemContent />
+        }
+      </article>
     </>
   );
 }

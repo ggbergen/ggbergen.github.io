@@ -1,13 +1,13 @@
 import GGHero from '@/components/GGHero';
-import Hjem from '#/hjem.mdx';
+import HjemContent from '#/hjem.mdx';
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <GGHero />
-      <div className="prose">
-        <Hjem></Hjem>
-      </div>
+      <article className="prose">
+        <HjemContent></HjemContent>
+      </article>
     </>
   );
 }

@@ -7,6 +7,7 @@ export default function GGHero() {
           autoPlay
           muted
           loop
+          disablePictureInPicture
           className="absolute max-h-fit min-h-full min-w-full object-cover"
         ></video>
         <div className="z-10 flex flex-col justify-center gap-4 text-center w-full">
