@@ -84,7 +84,7 @@ export default function MobileFooter({ className = '' }) {
             </HiddenElement>
           </p>
         </div>
-        <p>GG Bergen 915 014 879</p>
+        <p className='text-center'>GG Bergen 915 014 879<br />Herman Grans Vei 6, andre etasje</p>
         <img className="h-24 pt-2" src="/logo.png"></img>
       </div>
     </footer>

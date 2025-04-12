@@ -40,6 +40,7 @@ export default function MainFooter({ className = '' }) {
             </HiddenElement>
           </p>
           <p>GG Bergen 915 014 879</p>
+          <p>Herman Grans Vei 6, andre etasje</p>
         </div>
         <img className="h-24" src="/logo.png"></img>
         <div className="h-24 w-72 text-right">
