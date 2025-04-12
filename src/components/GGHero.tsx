@@ -9,6 +9,7 @@ export default function GGHero() {
           loop
           disablePictureInPicture
           className="absolute max-h-fit min-h-full min-w-full object-cover"
+          poster="/hero.poster.jpg"
         ></video>
         <div className="z-10 flex w-full flex-col justify-center gap-4 text-center">
           <div className="flex justify-center">
