@@ -11,7 +11,7 @@ export default function GGMap() {
   return (
     <>
       <figure
-        className="min-h-[8rem] min-w-12 overflow-hidden lg:float-right lg:w-1/2 lg:ml-4 lg:my-0 mt-2 mb-0"
+        className="mt-2 mb-0 min-h-[8rem] min-w-12 overflow-clip rounded-md lg:float-right lg:my-0 lg:ml-4 lg:w-1/2"
         ref={ref}
       >
         <iframe
