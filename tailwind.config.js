@@ -13,6 +13,9 @@ module.exports = {
       vippscard: '20rem',
     },
     extend: {
+      backgroundImage: {
+        global: 'url("/geometric.jpg")'
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
